@@ -24,7 +24,7 @@ pip install -r requirements.txt
 python manage.py runserver 
 ```
 
-3. POST /image : 유저가 사진에 올라갈 제목과 내용을 Body 로 전송 (raw text)	
+3. POST `/image` : 유저가 사진에 올라갈 제목과 내용을 Body 로 전송 (raw text)	
 
 ```
 {
@@ -33,7 +33,7 @@ python manage.py runserver
 }
 ```
 
-3-1. POST /image 응답 형식 (JSON)
+3-1. POST `/image` 응답 형식 (JSON)
 
 ```
 {
@@ -44,12 +44,12 @@ python manage.py runserver
 }
 ```
 
-4. GET /image/<postPk> : 유저가 보낸 /image 의 요청으로 돌아온 id 값을 postPk 에 Path 로 보냄.
+4. GET `/image/<postPk>` : 유저가 보낸 /image 의 요청으로 돌아온 id 값을 postPk 에 Path 로 보냄.
 
 ```
 http://127.0.0.1:8000/image/6
 ```
 
-4-1. GET /image/<postPk> 에 대한 응답으로 로컬 이미지 파일이 반환됨. (추후에 서버 스토리지에 저장해서 URL 로 반환하기)
+4-1. GET `/image/<postPk>` 에 대한 응답으로 로컬 이미지 파일이 반환됨. (추후에 서버 스토리지에 저장해서 URL 로 반환하기)
 
 ![image-20200730205523393](image-20200730205523393.png)
